@@ -14,5 +14,6 @@ $obj->name = $sku;
 $obj->id = '11';
 $obj->money = $type;
 
+
 $b = json_encode($obj);
 echo $b;

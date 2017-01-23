@@ -15,7 +15,6 @@ function  connectDb()
     if ($mySql->connect_error) {
         die("connect_failed:" + $mySql->connect_error);
     }
-    $mySql->close();
     return $mySql;
 }
 

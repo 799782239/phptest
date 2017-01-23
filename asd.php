@@ -14,7 +14,7 @@ $obj = new TestObj();
 $obj->name = $sku;
 $obj->id = '11';
 $obj->money = $type;
-queryDb("");
+queryDb("select * from base_equipment");
 
 
 $b = json_encode($obj);

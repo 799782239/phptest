@@ -19,19 +19,14 @@ function  connectDb()
     return $mySql;
 }
 
-function  queryDb()
+function  queryDb($sql)
 {
-
     $mySql = connectDb();
-    $result = $mySql->query("");
+    $result = $mySql->query($sql);
+    $mySql->close();
     if ($result->num_rows > 0) {
         return $result;
     } else {
         return "无结果";
     }
-}
-
-function close($mySql)
-{
-    $mySql->close();
 }

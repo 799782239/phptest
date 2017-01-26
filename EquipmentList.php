@@ -7,6 +7,7 @@
  */
 include 'db/DbTransaction.php';
 include 'model/EquipmentListModel.php';
+include 'Out.php';
 
 $part = $_GET['part'];
 $min = $_GET['min'];
@@ -27,4 +28,4 @@ while ($obj = mysqli_fetch_array($result)) {
 }
 //$results['errorCode'] = "0";
 //$results['errorMessage'] = "ok";
-echo json_encode($data);
+echo outMessage("1", "success", $results);

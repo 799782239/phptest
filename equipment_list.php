@@ -24,8 +24,7 @@ while ($obj = mysqli_fetch_array($result)) {
     $data->stand = $obj["stand"];
     $data->from = $obj["from"];
     $data->part = $obj["part"];
+    $data->pId = $obj["pid"];
     $results[] = $data;
 }
-//$results['errorCode'] = "0";
-//$results['errorMessage'] = "ok";
 echo outMessage("1", "success", $results);

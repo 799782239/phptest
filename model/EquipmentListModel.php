@@ -15,5 +15,6 @@ class EquipmentListModel
     public $stand = null;//突出的属性
     public $from = null;//产出途径
     public $part = null;//部位
+    public $pId = null;//pId
 
 }
